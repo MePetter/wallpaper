@@ -1,10 +1,13 @@
 #!/bin/bash
 
-# URL wallpaper di repo GitHub lo
+# URL wallpaper dari repo GitHub lo
 WALLPAPER_URL="https://raw.githubusercontent.com/MePetter/wallpaper/main/wallpaper.jpeg"
 
 # Path untuk menyimpan wallpaper
-WALLPAPER_PATH="/usr/share/backgrounds/wallpaper.jpg"
+WALLPAPER_PATH="$HOME/Downloads/wallpaper.jpg"
+
+# Buat folder kalau belum ada
+mkdir -p "$(dirname "$WALLPAPER_PATH")"
 
 # Download wallpaper terbaru
 echo "Downloading new wallpaper..."
